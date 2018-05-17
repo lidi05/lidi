@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="box">
+        <header class='header'>
+            <span class='glyphicon glyphicon-th'></span><input type="text" placeholder="搜素商品名称"><span class='glyphicon glyphicon-user'></span>
+        </header>
+        <nav class='nav'>
+            <ul class='list'>
+
+            </ul>
+        </nav>
+        <main class='main'>
+            <div class='main_banner'>
+                <div></div>
+            </div>
+            <img src="img/banner.png" alt="">
+            <img src="img/log.png" alt="">
+        </main>
+        <footer class='footer'>
+            <dl>
+                <dt><span class='glyphicon glyphicon-home'></span></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><span class='glyphicon glyphicon-list-alt'></span></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><span class='glyphicon glyphicon-book'></span></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><span class='glyphicon glyphicon-user'></span></dt>
+                <dd>首页</dd>
+            </dl>
+        </footer>
+    </div>
+    <script class='tel' type='text/x-handlebars-template'>
+        {{#each data}}
+        <li>{{tel}}</li>
+        {{/each}}
+    </script>
+    <script class='del' type='text/x-handlebars-template'>
+        {{#each say}}
+        <dl>
+            <dt><img src='{{img}}'></dt>
+            <dd>{{pic}}</dd>
+        </dl>
+        {{/each}}
+    </script>
+    <script src='./js/require.js' defer async data-main='js/main'></script>
+</body>
+
+</html>
